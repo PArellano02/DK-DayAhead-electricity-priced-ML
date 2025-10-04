@@ -149,7 +149,3 @@ cython_debug/
 # VSCode
 .vscode/
 
-# Output files
-*.csv
-*.pdf
-*.png
