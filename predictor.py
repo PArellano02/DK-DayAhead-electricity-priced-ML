@@ -201,13 +201,15 @@ y_train = train_data['DK_1_price_day_ahead']
 X_test = test_data[x_variables2]
 y_test = test_data['DK_1_price_day_ahead']
 
+weights = train_data['cet_cest_year'].apply(lambda x: 1 if x in [2018] else 1)
+
 print(' ')
 print('XGBoost Model All variables')
 
 # Hyperparameters tuned using GridSearchCV
 # Train the final model with the best parameters
 XGB_1 = XGBRegressor(n_estimators =110, learning_rate = 0.01, subsample= 0.4, colsample_bytree= .8, max_depth=11, n_jobs=-1, random_state=42)
-XGB_1.fit(X_train, y_train)
+XGB_1.fit(X_train, y_train, sample_weight=weights)
 
 # Predict on test data
 y_pred = XGB_1.predict(X_test)
