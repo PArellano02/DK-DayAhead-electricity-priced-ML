@@ -1,6 +1,6 @@
 # Day-Ahead Electricity Price Prediction for DK1 Bidding Zone
 
-This project predicts the day-ahead electricity prices in the DK1 bidding zone in Denmark. It uses machine learning models to forecast prices based on various features like load, renewable energy generation, and weather data.
+This was my first attempt at creating an XGBooost model to predict Day Ahead electricity prices in Denmark. Also made some graphs to explain some of the patterns in day-ahead prices in DK and show some of the shortcomings of my model. Maybe when I have some more time I will try to fix this up a little bit and capture that day-to-day variability a lot better!
 
 ## Key Results
 
