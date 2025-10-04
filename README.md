@@ -8,22 +8,22 @@ Here are some of the key results from the analysis:
 
 ### Feature Importance
 
-![Feature Importance](output/feature_importance.png)
+![Feature Importance](https://raw.githubusercontent.com/PArellano02/DK-DayAhead-electricity-priced-ML/main/output/feature_importance.png)
 
 ### Actual vs. Predicted Prices
 
-![Actual vs. Predicted](output/actual_vs_predicted.png)
+![Actual vs. Predicted](https://raw.githubusercontent.com/PArellano02/DK-DayAhead-electricity-priced-ML/main/output/actual_vs_predicted.png)
 
 ### Average Price per Hour for Each Year
 
-![Average Price per Hour](output/average_price_per_hour_per_year.png)
+![Average Price per Hour](https://raw.githubusercontent.com/PArellano02/DK-DayAhead-electricity-priced-ML/main/output/average_price_per_hour_per_year.png)
 
 ### RMSE by Month and Hour
 
-![RMSE by Month and Hour](output/rmse_by_month_hour.png)
+![RMSE by Month and Hour](https://raw.githubusercontent.com/PArellano02/DK-DayAhead-electricity-priced-ML/main/output/rmse_by_month_hour.png)
 
 ## Full Report
 
 For a more detailed analysis, please see the full report:
 
-[Model Performance Report](output/model_performance_report.pdf)
+[Model Performance Report](https://github.com/PArellano02/DK-DayAhead-electricity-priced-ML/blob/main/output/model_performance_report.pdf)
