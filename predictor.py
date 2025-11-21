@@ -19,10 +19,11 @@ warnings.filterwarnings('ignore')
 pdf_paths = []
 
 # Load datasets
-ninja_pv_wind_path = '/Users/pedroarellano/Desktop/Side Hustle/ninja_pv_wind_profiles_singleindex.csv'
-renewable_capacity_path = '/Users/pedroarellano/Desktop/Side Hustle/renewable_capacity_timeseries.csv'
-time_series_data_path = '/Users/pedroarellano/Desktop/Side Hustle/time_series_60min_singleindex.csv'
-weather_data_path = '/Users/pedroarellano/Desktop/Side Hustle/weather_data.csv'
+base_dir = os.path.dirname(os.path.abspath(__file__))
+ninja_pv_wind_path = os.path.join(base_dir, 'ninja_pv_wind_profiles_singleindex.csv')
+renewable_capacity_path = os.path.join(base_dir, 'renewable_capacity_timeseries.csv')
+time_series_data_path = os.path.join(base_dir, 'time_series_60min_singleindex.csv')
+weather_data_path = os.path.join(base_dir, 'weather_data.csv')
 
 # Check if files exist
 for file_path in [ninja_pv_wind_path, renewable_capacity_path, time_series_data_path, weather_data_path]:
@@ -100,7 +101,7 @@ test_data = merged_data[(merged_data.index.year == 2019)]
 
 
 # Define the file path where you want to save the CSV file
-csv_file_path = '/Users/pedroarellano/Desktop/Side Hustle/merged_data.csv'
+csv_file_path = os.path.join(base_dir, 'merged_data.csv')
 
 # Save the merged_data DataFrame to a CSV file
 merged_data.to_csv(csv_file_path, index=False)
@@ -389,7 +390,7 @@ print(f"PDF report saved to {pdf_path}")
 
 
 # Load the daily dataset
-daily_path = '/Users/pedroarellano/Desktop/Side Hustle/daily.csv'
+daily_path = os.path.join(base_dir, 'daily.csv')
 daily = pd.read_csv(daily_path)
 
 # Ensure the date column in the daily dataset is in datetime format
